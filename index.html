@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link rel="resetsheet" type="text/reset" href="assets/css/reset.css">
+
+    <title>Game day</title>
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+
+        <div id="header">
+            <h1>   Crystal Collector!</h1>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div id="instructions">
+            <p> You will be give a random number at the start of the game.   </p>  
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>    
+            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        </div>
+        
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+            <div id="scorecard1">
+                <h3 id=compScore> </h3>
+            </div>    
+        </div>
+
+        <div class="col-sm-3">
+            <div id="scorecard2">
+            <p id=win/loss>  </p> <br>
+            <p id=wins> Wins: </p> <br>
+            <p id=losses> Losses: </p> <br>
+            </div> 
+        </div>
+
+        <div class="col-sm-6">
+            <div>
+
+            </div>
+            
+        </div>
+          
+    </div>
+
+    <div class="row">
+
+        <div id="images">
+            <img class="crystal-images" id="crystal1" src="assets/images/Boulder_Badge.png" alt="crystal-1">
+            <img class="crystal-images" id="crystal2" src="assets/images/Rainbow_Badge.png" alt="crystal-2">
+            <img class="crystal-images" id="crystal3" src="assets/images/Thunder_Badge.png" alt="crystal-3">
+            <img class="crystal-images" id="crystal4" src="assets/images/Volcano_Badge.png" alt="crystal-4">
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div id="totalScoreBar">
+        <h>  Your total score is: </h>  
+        </div>
+    </div>
+    <div class="row">
+        <div id="userScoreBox">
+            <h3 id=userScore> </h3>
+        </div>
+     </div>
+
+</div>
+<script type="text/javascript">
+
+// Array of computer & user choices
+// var computerChoices = [19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120]
+
+// var userChoices = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+// Computer chooses random number from Array
+// var compChoice = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+// console.log(compChoice)
+
+
+// Variables
+// var wins = 0;
+// var losses = 0; 
+// var userTotal = 0;
+
+// Make variables displayable
+// var winsText = document.getElementById("wins-text");
+// var lossesText = document.getElementById("losses-text");
+// var compChoiceText = document.getElementById("compChoice-text");
+// var userTotalText = document.getElementById("userTotal-text");
+
+
+
+
+
+// $("#number-to-guess").text(compChoice);
+
+
+// $(".crystal-images").on("click", function(){
+    
+//     userTotal += 1;
+
+//     alert("New score: " + userTotal);
+
+
+
+// / If/Else statements
+// if (userTotal === compChoice){
+
+// alert("winning ");
+// }
+// else if (userTotal >= compChoice){
+
+// alert("suck ass shit heel");
+// }
+
+
+// });
+
+
+
+
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>
